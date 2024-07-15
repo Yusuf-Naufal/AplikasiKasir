@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TambahUsersForm));
             this.panel2 = new System.Windows.Forms.Panel();
             this.TambahUsers_btn = new System.Windows.Forms.Button();
             this.batal_btn = new System.Windows.Forms.Button();
@@ -388,7 +387,6 @@
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TambahUsersForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TambahUsersForm";

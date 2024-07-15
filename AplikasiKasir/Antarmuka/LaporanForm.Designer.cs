@@ -28,19 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LaporanForm));
             this.Header_pnl = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.database_laporan = new System.Windows.Forms.DataGridView();
-            this.search_txt = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.no = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_transaksi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kode_transaksi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tanggal_transaksi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nama_kasir = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.total_harga = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.search_txt = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Header_pnl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.database_laporan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,7 +62,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(33, 57);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(366, 35);
+            this.label2.Size = new System.Drawing.Size(293, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "TreckRecord transaksi penjualan ";
             // 
@@ -73,7 +72,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(32, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(335, 39);
+            this.label1.Size = new System.Drawing.Size(268, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "List Laporan Penjualan";
             // 
@@ -95,28 +94,6 @@
             this.database_laporan.Size = new System.Drawing.Size(1527, 707);
             this.database_laporan.TabIndex = 2;
             // 
-            // search_txt
-            // 
-            this.search_txt.BackColor = System.Drawing.SystemColors.Control;
-            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.search_txt.Cursor = System.Windows.Forms.Cursors.Default;
-            this.search_txt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_txt.Location = new System.Drawing.Point(85, 130);
-            this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(282, 31);
-            this.search_txt.TabIndex = 11;
-            this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AplikasiKasir.Properties.Resources.Search;
-            this.pictureBox1.Location = new System.Drawing.Point(33, 127);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 34);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 10;
-            this.pictureBox1.TabStop = false;
-            // 
             // no
             // 
             this.no.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -133,7 +110,7 @@
             this.id_transaksi.HeaderText = "ID Transaksi";
             this.id_transaksi.MinimumWidth = 6;
             this.id_transaksi.Name = "id_transaksi";
-            this.id_transaksi.Width = 112;
+            this.id_transaksi.Width = 103;
             // 
             // kode_transaksi
             // 
@@ -170,6 +147,28 @@
             this.total_harga.MinimumWidth = 6;
             this.total_harga.Name = "total_harga";
             // 
+            // search_txt
+            // 
+            this.search_txt.BackColor = System.Drawing.SystemColors.Control;
+            this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.search_txt.Cursor = System.Windows.Forms.Cursors.Default;
+            this.search_txt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search_txt.Location = new System.Drawing.Point(85, 130);
+            this.search_txt.Name = "search_txt";
+            this.search_txt.Size = new System.Drawing.Size(282, 31);
+            this.search_txt.TabIndex = 11;
+            this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AplikasiKasir.Properties.Resources.Search;
+            this.pictureBox1.Location = new System.Drawing.Point(33, 127);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 34);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
+            // 
             // LaporanForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -181,7 +180,6 @@
             this.Controls.Add(this.database_laporan);
             this.Controls.Add(this.Header_pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LaporanForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LaporanForm";

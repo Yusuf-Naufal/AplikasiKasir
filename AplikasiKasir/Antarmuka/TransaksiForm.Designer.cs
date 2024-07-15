@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TransaksiForm));
             this.database_keranjang = new System.Windows.Forms.DataGridView();
             this.id_keranjang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.kode_transaksi = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -423,7 +422,6 @@
             this.Controls.Add(this.totalHarga_txt);
             this.Controls.Add(this.database_keranjang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TransaksiForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TransaksiForm";

@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TambahBarangForm));
             this.panel10 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tambah_btn = new System.Windows.Forms.Button();
             this.katbrg_cmb = new System.Windows.Forms.ComboBox();
             this.satuan_txt = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -46,7 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.kodebrg_txt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.tambah_btn = new System.Windows.Forms.Button();
             this.bersih_btn = new System.Windows.Forms.PictureBox();
             this.panel10.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -95,6 +94,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1091, 339);
             this.panel1.TabIndex = 35;
+            // 
+            // tambah_btn
+            // 
+            this.tambah_btn.BackColor = System.Drawing.Color.LightGreen;
+            this.tambah_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.tambah_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tambah_btn.Location = new System.Drawing.Point(651, 221);
+            this.tambah_btn.Name = "tambah_btn";
+            this.tambah_btn.Size = new System.Drawing.Size(409, 69);
+            this.tambah_btn.TabIndex = 33;
+            this.tambah_btn.Text = "Tambah";
+            this.tambah_btn.UseVisualStyleBackColor = false;
+            this.tambah_btn.Click += new System.EventHandler(this.tambah_btn_Click);
             // 
             // katbrg_cmb
             // 
@@ -243,19 +255,6 @@
             this.label4.TabIndex = 19;
             this.label4.Text = "Kode Barang";
             // 
-            // tambah_btn
-            // 
-            this.tambah_btn.BackColor = System.Drawing.Color.LightGreen;
-            this.tambah_btn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.tambah_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tambah_btn.Location = new System.Drawing.Point(651, 221);
-            this.tambah_btn.Name = "tambah_btn";
-            this.tambah_btn.Size = new System.Drawing.Size(409, 69);
-            this.tambah_btn.TabIndex = 33;
-            this.tambah_btn.Text = "Tambah";
-            this.tambah_btn.UseVisualStyleBackColor = false;
-            this.tambah_btn.Click += new System.EventHandler(this.tambah_btn_Click);
-            // 
             // bersih_btn
             // 
             this.bersih_btn.Image = global::AplikasiKasir.Properties.Resources.trashIcon;
@@ -277,7 +276,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel10);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TambahBarangForm";
             this.Text = "TambahBarangForm";
             this.Load += new System.EventHandler(this.TambahBarangForm_Load);

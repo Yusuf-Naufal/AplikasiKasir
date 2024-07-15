@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.IconLogin = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -44,11 +44,10 @@
             this.password_txt = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.IconLogin = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -130,6 +129,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Selamat Datang";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // IconLogin
+            // 
+            this.IconLogin.Image = global::AplikasiKasir.Properties.Resources.IconLogin;
+            this.IconLogin.Location = new System.Drawing.Point(69, 22);
+            this.IconLogin.Name = "IconLogin";
+            this.IconLogin.Size = new System.Drawing.Size(251, 250);
+            this.IconLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.IconLogin.TabIndex = 0;
+            this.IconLogin.TabStop = false;
             // 
             // label1
             // 
@@ -229,16 +238,6 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // IconLogin
-            // 
-            this.IconLogin.Image = global::AplikasiKasir.Properties.Resources.IconLogin;
-            this.IconLogin.Location = new System.Drawing.Point(69, 22);
-            this.IconLogin.Name = "IconLogin";
-            this.IconLogin.Size = new System.Drawing.Size(251, 250);
-            this.IconLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IconLogin.TabIndex = 0;
-            this.IconLogin.TabStop = false;
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -256,15 +255,14 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginForm";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.IconLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.IconLogin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

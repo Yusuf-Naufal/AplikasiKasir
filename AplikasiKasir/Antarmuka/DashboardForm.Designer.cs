@@ -28,31 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardForm));
             this.navbar_pnl = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.users_lbl = new System.Windows.Forms.Label();
             this.Aplikasi = new System.Windows.Forms.Label();
             this.sidebar_panel = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.logout_btn = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.laporan_btn = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.barang_btn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.users_btn = new System.Windows.Forms.Button();
             this.transaksi_btn = new System.Windows.Forms.Button();
-            this.IsiPanel = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.home_pb = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.IsiPanel = new System.Windows.Forms.Panel();
             this.navbar_pnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.sidebar_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.home_pb)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // navbar_pnl
@@ -64,8 +63,18 @@
             this.navbar_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.navbar_pnl.Location = new System.Drawing.Point(0, 0);
             this.navbar_pnl.Name = "navbar_pnl";
-            this.navbar_pnl.Size = new System.Drawing.Size(2072, 81);
+            this.navbar_pnl.Size = new System.Drawing.Size(2102, 81);
             this.navbar_pnl.TabIndex = 0;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::AplikasiKasir.Properties.Resources.profileDashboard;
+            this.pictureBox5.Location = new System.Drawing.Point(1960, 15);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
             // 
             // users_lbl
             // 
@@ -106,8 +115,18 @@
             this.sidebar_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebar_panel.Location = new System.Drawing.Point(0, 81);
             this.sidebar_panel.Name = "sidebar_panel";
-            this.sidebar_panel.Size = new System.Drawing.Size(382, 1023);
+            this.sidebar_panel.Size = new System.Drawing.Size(382, 1102);
             this.sidebar_panel.TabIndex = 1;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::AplikasiKasir.Properties.Resources.logoutDashboard;
+            this.pictureBox4.Location = new System.Drawing.Point(36, 907);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 10;
+            this.pictureBox4.TabStop = false;
             // 
             // logout_btn
             // 
@@ -123,6 +142,16 @@
             this.logout_btn.UseVisualStyleBackColor = true;
             this.logout_btn.Click += new System.EventHandler(this.logout_btn_Click);
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::AplikasiKasir.Properties.Resources.laporanDashboard;
+            this.pictureBox3.Location = new System.Drawing.Point(36, 252);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
             // laporan_btn
             // 
             this.laporan_btn.FlatAppearance.BorderSize = 0;
@@ -137,6 +166,16 @@
             this.laporan_btn.UseVisualStyleBackColor = true;
             this.laporan_btn.Click += new System.EventHandler(this.laporan_btn_Click);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::AplikasiKasir.Properties.Resources.barangDashboard;
+            this.pictureBox2.Location = new System.Drawing.Point(36, 177);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
             // barang_btn
             // 
             this.barang_btn.FlatAppearance.BorderSize = 0;
@@ -150,6 +189,16 @@
             this.barang_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.barang_btn.UseVisualStyleBackColor = true;
             this.barang_btn.Click += new System.EventHandler(this.barang_btn_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::AplikasiKasir.Properties.Resources.userDashboard;
+            this.pictureBox1.Location = new System.Drawing.Point(36, 102);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // users_btn
             // 
@@ -179,55 +228,6 @@
             this.transaksi_btn.UseVisualStyleBackColor = true;
             this.transaksi_btn.Click += new System.EventHandler(this.transaksi_btn_Click);
             // 
-            // IsiPanel
-            // 
-            this.IsiPanel.BackColor = System.Drawing.SystemColors.Control;
-            this.IsiPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IsiPanel.Location = new System.Drawing.Point(382, 81);
-            this.IsiPanel.Name = "IsiPanel";
-            this.IsiPanel.Size = new System.Drawing.Size(2113, 1279);
-            this.IsiPanel.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::AplikasiKasir.Properties.Resources.logoutDashboard;
-            this.pictureBox4.Location = new System.Drawing.Point(36, 907);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(56, 50);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::AplikasiKasir.Properties.Resources.laporanDashboard;
-            this.pictureBox3.Location = new System.Drawing.Point(36, 252);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(56, 50);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::AplikasiKasir.Properties.Resources.barangDashboard;
-            this.pictureBox2.Location = new System.Drawing.Point(36, 177);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 50);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::AplikasiKasir.Properties.Resources.userDashboard;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 102);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-            // 
             // home_pb
             // 
             this.home_pb.Image = global::AplikasiKasir.Properties.Resources.cashierIcon;
@@ -238,40 +238,38 @@
             this.home_pb.TabIndex = 0;
             this.home_pb.TabStop = false;
             // 
-            // pictureBox5
+            // IsiPanel
             // 
-            this.pictureBox5.Image = global::AplikasiKasir.Properties.Resources.profileDashboard;
-            this.pictureBox5.Location = new System.Drawing.Point(1960, 15);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(55, 53);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
+            this.IsiPanel.BackColor = System.Drawing.SystemColors.Control;
+            this.IsiPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.IsiPanel.Location = new System.Drawing.Point(382, 81);
+            this.IsiPanel.Name = "IsiPanel";
+            this.IsiPanel.Size = new System.Drawing.Size(2150, 1378);
+            this.IsiPanel.TabIndex = 2;
             // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(2072, 1104);
+            this.ClientSize = new System.Drawing.Size(2102, 1183);
             this.Controls.Add(this.IsiPanel);
             this.Controls.Add(this.sidebar_panel);
             this.Controls.Add(this.navbar_pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashboardForm";
             this.Text = "DashboardForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.DashboardForm_Load);
             this.navbar_pnl.ResumeLayout(false);
             this.navbar_pnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.sidebar_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.home_pb)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }

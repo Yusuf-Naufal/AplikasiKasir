@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BarangForm));
             this.Header_pnl = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -458,7 +457,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1663, 1114);
+            this.ClientSize = new System.Drawing.Size(1663, 1102);
             this.Controls.Add(this.idUsers_lbl);
             this.Controls.Add(this.reflash_btn);
             this.Controls.Add(this.tambahbarang_btn);
@@ -468,7 +467,6 @@
             this.Controls.Add(this.database_barang);
             this.Controls.Add(this.Header_pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BarangForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BarangFrom";
