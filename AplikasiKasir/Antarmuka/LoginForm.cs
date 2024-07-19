@@ -55,5 +55,7 @@ namespace AplikasiKasir.Antarmuka
                 Application.Exit();
             }
         }
+
+       
     }
 }

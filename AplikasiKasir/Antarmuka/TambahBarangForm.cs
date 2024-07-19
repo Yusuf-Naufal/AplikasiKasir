@@ -86,11 +86,29 @@ namespace AplikasiKasir.Antarmuka
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                 }
+                else
+                {
+                    MessageBox.Show("Barang Tidak Ada", "INFORMASI",
+                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
 
         private void tambah_btn_Click(object sender, EventArgs e)
         {
+
+            // Pengecekan apakah semua field telah diisi
+            if (string.IsNullOrWhiteSpace(kodebrg_txt.Text) ||
+                string.IsNullOrWhiteSpace(namabrg_txt.Text) ||
+                string.IsNullOrWhiteSpace(jumlah_txt.Text) ||
+                string.IsNullOrWhiteSpace(katbrg_cmb.Text) ||
+                string.IsNullOrWhiteSpace(hrgbeli_txt.Text) ||
+                string.IsNullOrWhiteSpace(hrgjual_txt.Text) ||
+                string.IsNullOrWhiteSpace(satuan_txt.Text))
+            {
+                MessageBox.Show("Semua field harus diisi.", "PERINGATAN", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (barang.apakahAda(kodebrg_txt.Text))
             {
                 double jumlahTambah = Convert.ToDouble(jumlah_txt.Text);
@@ -119,6 +137,7 @@ namespace AplikasiKasir.Antarmuka
                 if (barang.SimpanBarang())
                 {
                     MessageBox.Show("Barang baru berhasil ditambahkan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Close();
                 }
                 else
                 {

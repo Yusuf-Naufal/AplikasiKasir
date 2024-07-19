@@ -77,17 +77,19 @@
             this.Header_pnl.Controls.Add(this.label1);
             this.Header_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.Header_pnl.Location = new System.Drawing.Point(0, 0);
+            this.Header_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Header_pnl.Name = "Header_pnl";
-            this.Header_pnl.Size = new System.Drawing.Size(1663, 111);
+            this.Header_pnl.Size = new System.Drawing.Size(1253, 90);
             this.Header_pnl.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 57);
+            this.label2.Location = new System.Drawing.Point(25, 46);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(261, 28);
+            this.label2.Size = new System.Drawing.Size(206, 21);
             this.label2.TabIndex = 1;
             this.label2.Text = "List barang yang ada di toko";
             // 
@@ -95,14 +97,17 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(32, 26);
+            this.label1.Location = new System.Drawing.Point(24, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 31);
+            this.label1.Size = new System.Drawing.Size(117, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "List Barang";
             // 
             // database_barang
             // 
+            this.database_barang.AllowUserToAddRows = false;
+            this.database_barang.AllowUserToDeleteRows = false;
             this.database_barang.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(251)))), ((int)(((byte)(226)))));
             this.database_barang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.database_barang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -114,11 +119,13 @@
             this.harga_jual,
             this.satuan});
             this.database_barang.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.database_barang.Location = new System.Drawing.Point(522, 184);
+            this.database_barang.Location = new System.Drawing.Point(392, 150);
+            this.database_barang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.database_barang.Name = "database_barang";
+            this.database_barang.ReadOnly = true;
             this.database_barang.RowHeadersWidth = 51;
             this.database_barang.RowTemplate.Height = 24;
-            this.database_barang.Size = new System.Drawing.Size(1068, 751);
+            this.database_barang.Size = new System.Drawing.Size(801, 610);
             this.database_barang.TabIndex = 2;
             this.database_barang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.database_barang_CellClick);
             // 
@@ -129,7 +136,8 @@
             this.kode_barang.HeaderText = "Kode Barang";
             this.kode_barang.MinimumWidth = 6;
             this.kode_barang.Name = "kode_barang";
-            this.kode_barang.Width = 115;
+            this.kode_barang.ReadOnly = true;
+            this.kode_barang.Width = 94;
             // 
             // nama_barang
             // 
@@ -138,7 +146,8 @@
             this.nama_barang.HeaderText = "Nama Barang";
             this.nama_barang.MinimumWidth = 6;
             this.nama_barang.Name = "nama_barang";
-            this.nama_barang.Width = 120;
+            this.nama_barang.ReadOnly = true;
+            this.nama_barang.Width = 97;
             // 
             // nama_kategori
             // 
@@ -147,7 +156,8 @@
             this.nama_kategori.HeaderText = "Kategori";
             this.nama_kategori.MinimumWidth = 6;
             this.nama_kategori.Name = "nama_kategori";
-            this.nama_kategori.Width = 86;
+            this.nama_kategori.ReadOnly = true;
+            this.nama_kategori.Width = 71;
             // 
             // jumlah
             // 
@@ -156,7 +166,8 @@
             this.jumlah.HeaderText = "Jumlah";
             this.jumlah.MinimumWidth = 6;
             this.jumlah.Name = "jumlah";
-            this.jumlah.Width = 79;
+            this.jumlah.ReadOnly = true;
+            this.jumlah.Width = 65;
             // 
             // harga_beli
             // 
@@ -165,6 +176,8 @@
             this.harga_beli.HeaderText = "Harga Beli";
             this.harga_beli.MinimumWidth = 6;
             this.harga_beli.Name = "harga_beli";
+            this.harga_beli.ReadOnly = true;
+            this.harga_beli.Width = 81;
             // 
             // harga_jual
             // 
@@ -173,7 +186,8 @@
             this.harga_jual.HeaderText = "Harga Jual";
             this.harga_jual.MinimumWidth = 6;
             this.harga_jual.Name = "harga_jual";
-            this.harga_jual.Width = 102;
+            this.harga_jual.ReadOnly = true;
+            this.harga_jual.Width = 83;
             // 
             // satuan
             // 
@@ -182,6 +196,7 @@
             this.satuan.HeaderText = "Satuan";
             this.satuan.MinimumWidth = 6;
             this.satuan.Name = "satuan";
+            this.satuan.ReadOnly = true;
             // 
             // search_txt
             // 
@@ -189,9 +204,10 @@
             this.search_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.search_txt.Cursor = System.Windows.Forms.Cursors.Default;
             this.search_txt.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search_txt.Location = new System.Drawing.Point(1308, 135);
+            this.search_txt.Location = new System.Drawing.Point(981, 110);
+            this.search_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.search_txt.Name = "search_txt";
-            this.search_txt.Size = new System.Drawing.Size(282, 31);
+            this.search_txt.Size = new System.Drawing.Size(212, 25);
             this.search_txt.TabIndex = 4;
             this.search_txt.TextChanged += new System.EventHandler(this.search_txt_TextChanged);
             // 
@@ -216,17 +232,19 @@
             this.Edit_pnl.Controls.Add(this.kodebrg_txt);
             this.Edit_pnl.Controls.Add(this.label4);
             this.Edit_pnl.Controls.Add(this.label3);
-            this.Edit_pnl.Location = new System.Drawing.Point(12, 135);
+            this.Edit_pnl.Location = new System.Drawing.Point(9, 110);
+            this.Edit_pnl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Edit_pnl.Name = "Edit_pnl";
-            this.Edit_pnl.Size = new System.Drawing.Size(478, 714);
+            this.Edit_pnl.Size = new System.Drawing.Size(358, 580);
             this.Edit_pnl.TabIndex = 5;
             // 
             // bersih_btn
             // 
             this.bersih_btn.Image = global::AplikasiKasir.Properties.Resources.trashIcon;
-            this.bersih_btn.Location = new System.Drawing.Point(404, 24);
+            this.bersih_btn.Location = new System.Drawing.Point(303, 20);
+            this.bersih_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bersih_btn.Name = "bersih_btn";
-            this.bersih_btn.Size = new System.Drawing.Size(37, 38);
+            this.bersih_btn.Size = new System.Drawing.Size(28, 31);
             this.bersih_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bersih_btn.TabIndex = 33;
             this.bersih_btn.TabStop = false;
@@ -236,9 +254,10 @@
             // 
             this.katbrg_cmb.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.katbrg_cmb.FormattingEnabled = true;
-            this.katbrg_cmb.Location = new System.Drawing.Point(26, 276);
+            this.katbrg_cmb.Location = new System.Drawing.Point(20, 224);
+            this.katbrg_cmb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.katbrg_cmb.Name = "katbrg_cmb";
-            this.katbrg_cmb.Size = new System.Drawing.Size(414, 36);
+            this.katbrg_cmb.Size = new System.Drawing.Size(312, 29);
             this.katbrg_cmb.TabIndex = 6;
             // 
             // hapus_btn
@@ -247,9 +266,10 @@
             this.hapus_btn.FlatAppearance.BorderSize = 0;
             this.hapus_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.hapus_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hapus_btn.Location = new System.Drawing.Point(30, 548);
+            this.hapus_btn.Location = new System.Drawing.Point(22, 445);
+            this.hapus_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hapus_btn.Name = "hapus_btn";
-            this.hapus_btn.Size = new System.Drawing.Size(411, 42);
+            this.hapus_btn.Size = new System.Drawing.Size(308, 34);
             this.hapus_btn.TabIndex = 20;
             this.hapus_btn.Text = "Hapus";
             this.hapus_btn.UseVisualStyleBackColor = false;
@@ -261,9 +281,10 @@
             this.ubah_btn.FlatAppearance.BorderSize = 0;
             this.ubah_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ubah_btn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ubah_btn.Location = new System.Drawing.Point(30, 500);
+            this.ubah_btn.Location = new System.Drawing.Point(22, 406);
+            this.ubah_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ubah_btn.Name = "ubah_btn";
-            this.ubah_btn.Size = new System.Drawing.Size(411, 42);
+            this.ubah_btn.Size = new System.Drawing.Size(308, 34);
             this.ubah_btn.TabIndex = 19;
             this.ubah_btn.Text = "Ubah";
             this.ubah_btn.UseVisualStyleBackColor = false;
@@ -274,18 +295,20 @@
             this.satuan_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.satuan_txt.Cursor = System.Windows.Forms.Cursors.Default;
             this.satuan_txt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.satuan_txt.Location = new System.Drawing.Point(245, 435);
+            this.satuan_txt.Location = new System.Drawing.Point(184, 353);
+            this.satuan_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.satuan_txt.Name = "satuan_txt";
-            this.satuan_txt.Size = new System.Drawing.Size(195, 27);
+            this.satuan_txt.Size = new System.Drawing.Size(146, 22);
             this.satuan_txt.TabIndex = 18;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(240, 404);
+            this.label10.Location = new System.Drawing.Point(180, 328);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(72, 28);
+            this.label10.Size = new System.Drawing.Size(58, 21);
             this.label10.TabIndex = 17;
             this.label10.Text = "Satuan";
             // 
@@ -294,18 +317,20 @@
             this.hrgjual_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hrgjual_txt.Cursor = System.Windows.Forms.Cursors.Default;
             this.hrgjual_txt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hrgjual_txt.Location = new System.Drawing.Point(245, 354);
+            this.hrgjual_txt.Location = new System.Drawing.Point(184, 288);
+            this.hrgjual_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hrgjual_txt.Name = "hrgjual_txt";
-            this.hrgjual_txt.Size = new System.Drawing.Size(195, 27);
+            this.hrgjual_txt.Size = new System.Drawing.Size(146, 22);
             this.hrgjual_txt.TabIndex = 16;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(240, 323);
+            this.label9.Location = new System.Drawing.Point(180, 262);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(103, 28);
+            this.label9.Size = new System.Drawing.Size(83, 21);
             this.label9.TabIndex = 15;
             this.label9.Text = "Harga Jual";
             // 
@@ -314,18 +339,20 @@
             this.hrgbeli_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.hrgbeli_txt.Cursor = System.Windows.Forms.Cursors.Default;
             this.hrgbeli_txt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hrgbeli_txt.Location = new System.Drawing.Point(27, 354);
+            this.hrgbeli_txt.Location = new System.Drawing.Point(20, 288);
+            this.hrgbeli_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hrgbeli_txt.Name = "hrgbeli_txt";
-            this.hrgbeli_txt.Size = new System.Drawing.Size(199, 27);
+            this.hrgbeli_txt.Size = new System.Drawing.Size(149, 22);
             this.hrgbeli_txt.TabIndex = 14;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(22, 320);
+            this.label8.Location = new System.Drawing.Point(16, 260);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 28);
+            this.label8.Size = new System.Drawing.Size(81, 21);
             this.label8.TabIndex = 13;
             this.label8.Text = "Harga Beli";
             // 
@@ -334,18 +361,20 @@
             this.jumlah_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.jumlah_txt.Cursor = System.Windows.Forms.Cursors.Default;
             this.jumlah_txt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jumlah_txt.Location = new System.Drawing.Point(26, 435);
+            this.jumlah_txt.Location = new System.Drawing.Point(20, 353);
+            this.jumlah_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.jumlah_txt.Name = "jumlah_txt";
-            this.jumlah_txt.Size = new System.Drawing.Size(200, 27);
+            this.jumlah_txt.Size = new System.Drawing.Size(150, 22);
             this.jumlah_txt.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(24, 404);
+            this.label7.Location = new System.Drawing.Point(18, 328);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 28);
+            this.label7.Size = new System.Drawing.Size(60, 21);
             this.label7.TabIndex = 11;
             this.label7.Text = "Jumlah";
             // 
@@ -353,9 +382,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(23, 243);
+            this.label6.Location = new System.Drawing.Point(17, 197);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 28);
+            this.label6.Size = new System.Drawing.Size(68, 21);
             this.label6.TabIndex = 9;
             this.label6.Text = "Kategori";
             // 
@@ -364,18 +394,20 @@
             this.namabrg_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.namabrg_txt.Cursor = System.Windows.Forms.Cursors.Default;
             this.namabrg_txt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.namabrg_txt.Location = new System.Drawing.Point(27, 202);
+            this.namabrg_txt.Location = new System.Drawing.Point(20, 164);
+            this.namabrg_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.namabrg_txt.Name = "namabrg_txt";
-            this.namabrg_txt.Size = new System.Drawing.Size(413, 27);
+            this.namabrg_txt.Size = new System.Drawing.Size(310, 22);
             this.namabrg_txt.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(23, 167);
+            this.label5.Location = new System.Drawing.Point(17, 136);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 28);
+            this.label5.Size = new System.Drawing.Size(105, 21);
             this.label5.TabIndex = 7;
             this.label5.Text = "Nama Barang";
             // 
@@ -383,19 +415,22 @@
             // 
             this.kodebrg_txt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.kodebrg_txt.Cursor = System.Windows.Forms.Cursors.Default;
+            this.kodebrg_txt.Enabled = false;
             this.kodebrg_txt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kodebrg_txt.Location = new System.Drawing.Point(26, 128);
+            this.kodebrg_txt.Location = new System.Drawing.Point(20, 104);
+            this.kodebrg_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kodebrg_txt.Name = "kodebrg_txt";
-            this.kodebrg_txt.Size = new System.Drawing.Size(414, 27);
+            this.kodebrg_txt.Size = new System.Drawing.Size(310, 22);
             this.kodebrg_txt.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(22, 93);
+            this.label4.Location = new System.Drawing.Point(16, 76);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(124, 28);
+            this.label4.Size = new System.Drawing.Size(98, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = "Kode Barang";
             // 
@@ -403,18 +438,20 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(22, 24);
+            this.label3.Location = new System.Drawing.Point(16, 20);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(146, 31);
+            this.label3.Size = new System.Drawing.Size(120, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Edit Barang";
             // 
             // idUsers_lbl
             // 
             this.idUsers_lbl.AutoSize = true;
-            this.idUsers_lbl.Location = new System.Drawing.Point(16, 108);
+            this.idUsers_lbl.Location = new System.Drawing.Point(12, 88);
+            this.idUsers_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.idUsers_lbl.Name = "idUsers_lbl";
-            this.idUsers_lbl.Size = new System.Drawing.Size(0, 16);
+            this.idUsers_lbl.Size = new System.Drawing.Size(0, 13);
             this.idUsers_lbl.TabIndex = 35;
             this.idUsers_lbl.Visible = false;
             // 
@@ -423,9 +460,10 @@
             this.reflash_btn.BackgroundImage = global::AplikasiKasir.Properties.Resources.reflashIcon1;
             this.reflash_btn.FlatAppearance.BorderSize = 0;
             this.reflash_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.reflash_btn.Location = new System.Drawing.Point(583, 127);
+            this.reflash_btn.Location = new System.Drawing.Point(437, 103);
+            this.reflash_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.reflash_btn.Name = "reflash_btn";
-            this.reflash_btn.Size = new System.Drawing.Size(52, 49);
+            this.reflash_btn.Size = new System.Drawing.Size(39, 40);
             this.reflash_btn.TabIndex = 34;
             this.reflash_btn.UseVisualStyleBackColor = true;
             this.reflash_btn.Click += new System.EventHandler(this.reflash_btn_Click);
@@ -435,9 +473,10 @@
             this.tambahbarang_btn.BackgroundImage = global::AplikasiKasir.Properties.Resources.tambahIcon2;
             this.tambahbarang_btn.FlatAppearance.BorderSize = 0;
             this.tambahbarang_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tambahbarang_btn.Location = new System.Drawing.Point(522, 127);
+            this.tambahbarang_btn.Location = new System.Drawing.Point(392, 103);
+            this.tambahbarang_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tambahbarang_btn.Name = "tambahbarang_btn";
-            this.tambahbarang_btn.Size = new System.Drawing.Size(55, 51);
+            this.tambahbarang_btn.Size = new System.Drawing.Size(41, 41);
             this.tambahbarang_btn.TabIndex = 33;
             this.tambahbarang_btn.UseVisualStyleBackColor = true;
             this.tambahbarang_btn.Click += new System.EventHandler(this.tambahbarang_btn_Click);
@@ -445,19 +484,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AplikasiKasir.Properties.Resources.Search;
-            this.pictureBox1.Location = new System.Drawing.Point(1257, 133);
+            this.pictureBox1.Location = new System.Drawing.Point(943, 108);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 34);
+            this.pictureBox1.Size = new System.Drawing.Size(27, 28);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
             // BarangForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1663, 1102);
+            this.ClientSize = new System.Drawing.Size(1253, 799);
             this.Controls.Add(this.idUsers_lbl);
             this.Controls.Add(this.reflash_btn);
             this.Controls.Add(this.tambahbarang_btn);
@@ -467,6 +507,7 @@
             this.Controls.Add(this.database_barang);
             this.Controls.Add(this.Header_pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BarangForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BarangFrom";

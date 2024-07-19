@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,7 +46,7 @@ namespace AplikasiKasir.Antarmuka
             total_belanja_txt.Text = total_belanja.ToString();
         }
 
-        // MEMBERI TANDA '.' SEPERTI NILAI MATA UANG INDONESIA
+         // MEMBERI TANDA '.' SEPERTI NILAI MATA UANG INDONESIA
         private void total_belanja_txt_Leave(object sender, EventArgs e)
         {
             TextBox textBox = sender as TextBox;
@@ -56,7 +57,7 @@ namespace AplikasiKasir.Antarmuka
                     // Mengambil nilai dari TextBox dan menghapus tanda titik dan koma
                     double value = Convert.ToDouble(textBox.Text.Replace(".", "").Replace(",", ""));
                     // Menampilkan hasil dalam format mata uang
-                    textBox.Text = value.ToString("#,0"); // Format sebagai mata uang dengan titik
+                    textBox.Text = value.ToString("#", new CultureInfo("id-ID")); // Format sebagai mata uang dengan titik
                 }
                 catch (FormatException)
                 {
@@ -74,7 +75,7 @@ namespace AplikasiKasir.Antarmuka
                 if (double.TryParse(text, out double value))
                 {
 
-                    textBox.Text = value.ToString("N0");
+                    textBox.Text = value.ToString("N0", new CultureInfo("id-ID"));
                     textBox.SelectionStart = textBox.Text.Length;
 
                 }
@@ -90,7 +91,7 @@ namespace AplikasiKasir.Antarmuka
                     // Mengambil nilai dari TextBox dan menghapus tanda titik dan koma
                     double value = Convert.ToDouble(textBox.Text.Replace(".", "").Replace(",", ""));
                     // Menampilkan hasil dalam format mata uang
-                    textBox.Text = value.ToString("N0"); // Format sebagai mata uang dengan titik
+                    textBox.Text = value.ToString("N0", new CultureInfo("id-ID")); // Format sebagai mata uang dengan titik
                 }
                 catch (FormatException)
                 {
@@ -108,7 +109,7 @@ namespace AplikasiKasir.Antarmuka
                 if (double.TryParse(text, out double value))
                 {
 
-                    textBox.Text = value.ToString("N0");
+                    textBox.Text = value.ToString("N0", new CultureInfo("id-ID"));
                     textBox.SelectionStart = textBox.Text.Length;
 
                 }
@@ -139,8 +140,8 @@ namespace AplikasiKasir.Antarmuka
                     try
                     {
                         // Mengambil nilai dari TextBox dan menghapus tanda titik
-                        double total = Convert.ToDouble(total_belanja_txt.Text);
-                        double bayar = Convert.ToDouble(total_bayar_txt.Text);
+                        double total = Convert.ToDouble(total_belanja_txt.Text.Replace(".", "").Replace(",", ""));
+                        double bayar = Convert.ToDouble(total_bayar_txt.Text.Replace(".", "").Replace(",", ""));
 
                         // Memeriksa apakah nilai bayar kurang dari total
                         if (bayar < total)
@@ -153,7 +154,7 @@ namespace AplikasiKasir.Antarmuka
                             double kembali = bayar - total;
 
                             // Menampilkan hasil kembalian dalam format mata uang
-                            kembalian_txt.Text = kembali.ToString("N0"); // Format sebagai mata uang dengan titik
+                            kembalian_txt.Text = kembali.ToString("N0", new CultureInfo("id-ID")); // Format sebagai mata uang dengan titik
                         }
                     }
                     catch (FormatException)
@@ -183,11 +184,16 @@ namespace AplikasiKasir.Antarmuka
                 return;
             }
 
+            // Konversi nilai dari TextBox ke double, menghapus tanda titik dan koma
+            double totalBelanja = Convert.ToDouble(total_belanja_txt.Text.Replace(".", "").Replace(",", ""));
+            double totalBayar = Convert.ToDouble(total_bayar_txt.Text.Replace(".", "").Replace(",", ""));
+            double kembalian = Convert.ToDouble(kembalian_txt.Text.Replace(".", "").Replace(",", ""));
+
             transaksi.Id_transaksi = id_transaksi_lbl.Text;
             transaksi.Nama_kasir = kasir_name_lbl.Text;
             transaksi.Tanggal_transaksi = tanggal_lbl.Text;
             transaksi.Kode_transaksi = kode_transaksi_lbl.Text;
-            transaksi.Total_bayar = total_belanja_txt.Text;
+            transaksi.Total_bayar = totalBelanja.ToString(CultureInfo.InvariantCulture);
 
             // Menambahkan data ke tabel transaksi jika ID transaksi belum ada
             if (!transaksi.CekIdTransaksi(id_transaksi_lbl.Text))

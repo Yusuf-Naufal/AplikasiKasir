@@ -81,11 +81,13 @@
             this.jumlah_barang,
             this.subtotal,
             this.tanggal});
-            this.database_keranjang.Location = new System.Drawing.Point(74, 195);
+            this.database_keranjang.Enabled = false;
+            this.database_keranjang.Location = new System.Drawing.Point(56, 158);
+            this.database_keranjang.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.database_keranjang.Name = "database_keranjang";
             this.database_keranjang.RowHeadersWidth = 51;
             this.database_keranjang.RowTemplate.Height = 24;
-            this.database_keranjang.Size = new System.Drawing.Size(1894, 768);
+            this.database_keranjang.Size = new System.Drawing.Size(1420, 624);
             this.database_keranjang.TabIndex = 0;
             this.database_keranjang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.database_keranjang_CellClick);
             // 
@@ -105,7 +107,7 @@
             this.kode_transaksi.HeaderText = "Kode Transaksi";
             this.kode_transaksi.MinimumWidth = 6;
             this.kode_transaksi.Name = "kode_transaksi";
-            this.kode_transaksi.Width = 120;
+            this.kode_transaksi.Width = 97;
             // 
             // kode_barang
             // 
@@ -114,7 +116,7 @@
             this.kode_barang.HeaderText = "Kode Barang";
             this.kode_barang.MinimumWidth = 6;
             this.kode_barang.Name = "kode_barang";
-            this.kode_barang.Width = 106;
+            this.kode_barang.Width = 87;
             // 
             // nama_barang
             // 
@@ -123,7 +125,7 @@
             this.nama_barang.HeaderText = "Nama Barang";
             this.nama_barang.MinimumWidth = 6;
             this.nama_barang.Name = "nama_barang";
-            this.nama_barang.Width = 110;
+            this.nama_barang.Width = 89;
             // 
             // harga
             // 
@@ -132,7 +134,7 @@
             this.harga.HeaderText = "Harga ";
             this.harga.MinimumWidth = 6;
             this.harga.Name = "harga";
-            this.harga.Width = 77;
+            this.harga.Width = 64;
             // 
             // jumlah_barang
             // 
@@ -141,7 +143,7 @@
             this.jumlah_barang.HeaderText = "Jumlah";
             this.jumlah_barang.MinimumWidth = 6;
             this.jumlah_barang.Name = "jumlah_barang";
-            this.jumlah_barang.Width = 79;
+            this.jumlah_barang.Width = 65;
             // 
             // subtotal
             // 
@@ -150,7 +152,7 @@
             this.subtotal.HeaderText = "Subtotal";
             this.subtotal.MinimumWidth = 6;
             this.subtotal.Name = "subtotal";
-            this.subtotal.Width = 85;
+            this.subtotal.Width = 71;
             // 
             // tanggal
             // 
@@ -165,9 +167,10 @@
             this.totalHarga_txt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.totalHarga_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.totalHarga_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalHarga_txt.Location = new System.Drawing.Point(1182, 35);
+            this.totalHarga_txt.Location = new System.Drawing.Point(886, 28);
+            this.totalHarga_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.totalHarga_txt.Name = "totalHarga_txt";
-            this.totalHarga_txt.Size = new System.Drawing.Size(786, 71);
+            this.totalHarga_txt.Size = new System.Drawing.Size(590, 58);
             this.totalHarga_txt.TabIndex = 1;
             this.totalHarga_txt.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -175,9 +178,10 @@
             // 
             this.waktu_lbl.AutoSize = true;
             this.waktu_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.waktu_lbl.Location = new System.Drawing.Point(1666, 159);
+            this.waktu_lbl.Location = new System.Drawing.Point(1250, 129);
+            this.waktu_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.waktu_lbl.Name = "waktu_lbl";
-            this.waktu_lbl.Size = new System.Drawing.Size(154, 30);
+            this.waktu_lbl.Size = new System.Drawing.Size(126, 23);
             this.waktu_lbl.TabIndex = 3;
             this.waktu_lbl.Text = "Tampil Waktu";
             // 
@@ -192,9 +196,10 @@
             this.tanggal_lbl.AutoSize = true;
             this.tanggal_lbl.BackColor = System.Drawing.Color.Transparent;
             this.tanggal_lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tanggal_lbl.Location = new System.Drawing.Point(1826, 159);
+            this.tanggal_lbl.Location = new System.Drawing.Point(1370, 129);
+            this.tanggal_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.tanggal_lbl.Name = "tanggal_lbl";
-            this.tanggal_lbl.Size = new System.Drawing.Size(102, 30);
+            this.tanggal_lbl.Size = new System.Drawing.Size(83, 23);
             this.tanggal_lbl.TabIndex = 4;
             this.tanggal_lbl.Text = "Tanggal ";
             // 
@@ -203,9 +208,10 @@
             this.kode_txt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.kode_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.kode_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kode_txt.Location = new System.Drawing.Point(268, 152);
+            this.kode_txt.Location = new System.Drawing.Point(201, 124);
+            this.kode_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kode_txt.Name = "kode_txt";
-            this.kode_txt.Size = new System.Drawing.Size(190, 37);
+            this.kode_txt.Size = new System.Drawing.Size(143, 31);
             this.kode_txt.TabIndex = 5;
             this.kode_txt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.kode_txt_KeyDown);
             // 
@@ -214,9 +220,10 @@
             this.jumlah_txt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.jumlah_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.jumlah_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jumlah_txt.Location = new System.Drawing.Point(464, 152);
+            this.jumlah_txt.Location = new System.Drawing.Point(348, 124);
+            this.jumlah_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.jumlah_txt.Name = "jumlah_txt";
-            this.jumlah_txt.Size = new System.Drawing.Size(75, 37);
+            this.jumlah_txt.Size = new System.Drawing.Size(57, 31);
             this.jumlah_txt.TabIndex = 6;
             this.jumlah_txt.TextChanged += new System.EventHandler(this.jumlah_txt_TextChanged);
             // 
@@ -226,9 +233,10 @@
             this.nama_barang_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nama_barang_txt.Enabled = false;
             this.nama_barang_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nama_barang_txt.Location = new System.Drawing.Point(545, 152);
+            this.nama_barang_txt.Location = new System.Drawing.Point(409, 124);
+            this.nama_barang_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nama_barang_txt.Name = "nama_barang_txt";
-            this.nama_barang_txt.Size = new System.Drawing.Size(319, 37);
+            this.nama_barang_txt.Size = new System.Drawing.Size(240, 31);
             this.nama_barang_txt.TabIndex = 7;
             // 
             // harga_txt
@@ -237,9 +245,10 @@
             this.harga_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.harga_txt.Enabled = false;
             this.harga_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.harga_txt.Location = new System.Drawing.Point(870, 152);
+            this.harga_txt.Location = new System.Drawing.Point(652, 124);
+            this.harga_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.harga_txt.Name = "harga_txt";
-            this.harga_txt.Size = new System.Drawing.Size(124, 37);
+            this.harga_txt.Size = new System.Drawing.Size(94, 31);
             this.harga_txt.TabIndex = 9;
             // 
             // subtotal_txt
@@ -248,18 +257,20 @@
             this.subtotal_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.subtotal_txt.Enabled = false;
             this.subtotal_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subtotal_txt.Location = new System.Drawing.Point(1000, 152);
+            this.subtotal_txt.Location = new System.Drawing.Point(750, 124);
+            this.subtotal_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.subtotal_txt.Name = "subtotal_txt";
-            this.subtotal_txt.Size = new System.Drawing.Size(124, 37);
+            this.subtotal_txt.Size = new System.Drawing.Size(94, 31);
             this.subtotal_txt.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(264, 126);
+            this.label1.Location = new System.Drawing.Point(198, 102);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(56, 22);
+            this.label1.Size = new System.Drawing.Size(47, 18);
             this.label1.TabIndex = 11;
             this.label1.Text = "Kode";
             // 
@@ -268,9 +279,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(460, 126);
+            this.label2.Location = new System.Drawing.Point(345, 102);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 20);
+            this.label2.Size = new System.Drawing.Size(59, 17);
             this.label2.TabIndex = 12;
             this.label2.Text = "Jumlah";
             // 
@@ -278,9 +290,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(541, 124);
+            this.label3.Location = new System.Drawing.Point(406, 101);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 22);
+            this.label3.Size = new System.Drawing.Size(110, 18);
             this.label3.TabIndex = 13;
             this.label3.Text = "Nama Barang";
             // 
@@ -288,9 +301,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(866, 124);
+            this.label4.Location = new System.Drawing.Point(650, 101);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 22);
+            this.label4.Size = new System.Drawing.Size(53, 18);
             this.label4.TabIndex = 14;
             this.label4.Text = "Harga";
             // 
@@ -298,9 +312,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(996, 124);
+            this.label5.Location = new System.Drawing.Point(747, 101);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 22);
+            this.label5.Size = new System.Drawing.Size(70, 18);
             this.label5.TabIndex = 15;
             this.label5.Text = "Subtotal";
             // 
@@ -308,9 +323,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(70, 124);
+            this.label6.Location = new System.Drawing.Point(52, 101);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(150, 22);
+            this.label6.Size = new System.Drawing.Size(126, 18);
             this.label6.TabIndex = 16;
             this.label6.Text = "Kode Transaksi";
             // 
@@ -319,9 +335,10 @@
             this.kode_transaksi_txt.BackColor = System.Drawing.Color.WhiteSmoke;
             this.kode_transaksi_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.kode_transaksi_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.kode_transaksi_txt.Location = new System.Drawing.Point(74, 152);
+            this.kode_transaksi_txt.Location = new System.Drawing.Point(56, 124);
+            this.kode_transaksi_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.kode_transaksi_txt.Name = "kode_transaksi_txt";
-            this.kode_transaksi_txt.Size = new System.Drawing.Size(190, 37);
+            this.kode_transaksi_txt.Size = new System.Drawing.Size(143, 31);
             this.kode_transaksi_txt.TabIndex = 17;
             // 
             // id_ker_txt
@@ -330,18 +347,20 @@
             this.id_ker_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.id_ker_txt.Enabled = false;
             this.id_ker_txt.Font = new System.Drawing.Font("Microsoft Tai Le", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.id_ker_txt.Location = new System.Drawing.Point(22, 208);
+            this.id_ker_txt.Location = new System.Drawing.Point(11, 168);
+            this.id_ker_txt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.id_ker_txt.Name = "id_ker_txt";
-            this.id_ker_txt.Size = new System.Drawing.Size(46, 37);
+            this.id_ker_txt.Size = new System.Drawing.Size(35, 31);
             this.id_ker_txt.TabIndex = 18;
             this.id_ker_txt.Visible = false;
             // 
             // payment_btn
             // 
             this.payment_btn.Image = global::AplikasiKasir.Properties.Resources.paymentIcon;
-            this.payment_btn.Location = new System.Drawing.Point(244, 35);
+            this.payment_btn.Location = new System.Drawing.Point(183, 28);
+            this.payment_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.payment_btn.Name = "payment_btn";
-            this.payment_btn.Size = new System.Drawing.Size(76, 63);
+            this.payment_btn.Size = new System.Drawing.Size(57, 51);
             this.payment_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.payment_btn.TabIndex = 34;
             this.payment_btn.TabStop = false;
@@ -350,9 +369,10 @@
             // bersih_btn
             // 
             this.bersih_btn.Image = global::AplikasiKasir.Properties.Resources.trashIcon;
-            this.bersih_btn.Location = new System.Drawing.Point(22, 151);
+            this.bersih_btn.Location = new System.Drawing.Point(16, 123);
+            this.bersih_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bersih_btn.Name = "bersih_btn";
-            this.bersih_btn.Size = new System.Drawing.Size(37, 38);
+            this.bersih_btn.Size = new System.Drawing.Size(28, 31);
             this.bersih_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bersih_btn.TabIndex = 33;
             this.bersih_btn.TabStop = false;
@@ -362,9 +382,10 @@
             // 
             this.hapusBelanja_btn.BackColor = System.Drawing.Color.Transparent;
             this.hapusBelanja_btn.Image = global::AplikasiKasir.Properties.Resources.removebasketIcon;
-            this.hapusBelanja_btn.Location = new System.Drawing.Point(162, 35);
+            this.hapusBelanja_btn.Location = new System.Drawing.Point(122, 28);
+            this.hapusBelanja_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.hapusBelanja_btn.Name = "hapusBelanja_btn";
-            this.hapusBelanja_btn.Size = new System.Drawing.Size(76, 63);
+            this.hapusBelanja_btn.Size = new System.Drawing.Size(57, 51);
             this.hapusBelanja_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.hapusBelanja_btn.TabIndex = 20;
             this.hapusBelanja_btn.TabStop = false;
@@ -374,9 +395,10 @@
             // 
             this.tambahBelanja_btn.BackColor = System.Drawing.Color.Transparent;
             this.tambahBelanja_btn.Image = global::AplikasiKasir.Properties.Resources.addbasketIcon;
-            this.tambahBelanja_btn.Location = new System.Drawing.Point(80, 35);
+            this.tambahBelanja_btn.Location = new System.Drawing.Point(60, 28);
+            this.tambahBelanja_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tambahBelanja_btn.Name = "tambahBelanja_btn";
-            this.tambahBelanja_btn.Size = new System.Drawing.Size(76, 63);
+            this.tambahBelanja_btn.Size = new System.Drawing.Size(57, 51);
             this.tambahBelanja_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.tambahBelanja_btn.TabIndex = 19;
             this.tambahBelanja_btn.TabStop = false;
@@ -385,9 +407,10 @@
             // dashboard_btn
             // 
             this.dashboard_btn.Image = global::AplikasiKasir.Properties.Resources.HomeDashboard;
-            this.dashboard_btn.Location = new System.Drawing.Point(326, 35);
+            this.dashboard_btn.Location = new System.Drawing.Point(244, 28);
+            this.dashboard_btn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dashboard_btn.Name = "dashboard_btn";
-            this.dashboard_btn.Size = new System.Drawing.Size(76, 63);
+            this.dashboard_btn.Size = new System.Drawing.Size(57, 51);
             this.dashboard_btn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dashboard_btn.TabIndex = 35;
             this.dashboard_btn.TabStop = false;
@@ -395,10 +418,10 @@
             // 
             // TransaksiForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(2041, 1046);
+            this.ClientSize = new System.Drawing.Size(1501, 808);
             this.Controls.Add(this.dashboard_btn);
             this.Controls.Add(this.payment_btn);
             this.Controls.Add(this.bersih_btn);
@@ -422,6 +445,7 @@
             this.Controls.Add(this.totalHarga_txt);
             this.Controls.Add(this.database_keranjang);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TransaksiForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TransaksiForm";

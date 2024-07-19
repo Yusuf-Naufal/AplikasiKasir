@@ -75,7 +75,6 @@ namespace AplikasiKasir.Antarmuka
         private void tambahusers_btn_Click(object sender, EventArgs e)
         {
             TambahUsersForm FormTambah = new TambahUsersForm();
-
             FormTambah.ShowDialog();
         }
 

@@ -62,16 +62,18 @@
             this.navbar_pnl.Controls.Add(this.Aplikasi);
             this.navbar_pnl.Dock = System.Windows.Forms.DockStyle.Top;
             this.navbar_pnl.Location = new System.Drawing.Point(0, 0);
+            this.navbar_pnl.Margin = new System.Windows.Forms.Padding(2);
             this.navbar_pnl.Name = "navbar_pnl";
-            this.navbar_pnl.Size = new System.Drawing.Size(2102, 81);
+            this.navbar_pnl.Size = new System.Drawing.Size(1556, 66);
             this.navbar_pnl.TabIndex = 0;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::AplikasiKasir.Properties.Resources.profileDashboard;
-            this.pictureBox5.Location = new System.Drawing.Point(1960, 15);
+            this.pictureBox5.Location = new System.Drawing.Point(1470, 12);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(55, 53);
+            this.pictureBox5.Size = new System.Drawing.Size(41, 43);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
@@ -80,9 +82,10 @@
             // 
             this.users_lbl.AutoSize = true;
             this.users_lbl.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.users_lbl.Location = new System.Drawing.Point(1764, 30);
+            this.users_lbl.Location = new System.Drawing.Point(1323, 24);
+            this.users_lbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.users_lbl.Name = "users_lbl";
-            this.users_lbl.Size = new System.Drawing.Size(149, 25);
+            this.users_lbl.Size = new System.Drawing.Size(123, 20);
             this.users_lbl.TabIndex = 1;
             this.users_lbl.Text = "Nama Pengguna";
             this.users_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -92,9 +95,10 @@
             this.Aplikasi.AutoSize = true;
             this.Aplikasi.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Aplikasi.ForeColor = System.Drawing.Color.Black;
-            this.Aplikasi.Location = new System.Drawing.Point(28, 15);
+            this.Aplikasi.Location = new System.Drawing.Point(21, 12);
+            this.Aplikasi.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Aplikasi.Name = "Aplikasi";
-            this.Aplikasi.Size = new System.Drawing.Size(226, 45);
+            this.Aplikasi.Size = new System.Drawing.Size(190, 37);
             this.Aplikasi.TabIndex = 0;
             this.Aplikasi.Text = "Aplikasi Kasir";
             this.Aplikasi.Click += new System.EventHandler(this.Aplikasi_Click);
@@ -113,17 +117,19 @@
             this.sidebar_panel.Controls.Add(this.transaksi_btn);
             this.sidebar_panel.Controls.Add(this.home_pb);
             this.sidebar_panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sidebar_panel.Location = new System.Drawing.Point(0, 81);
+            this.sidebar_panel.Location = new System.Drawing.Point(0, 66);
+            this.sidebar_panel.Margin = new System.Windows.Forms.Padding(2);
             this.sidebar_panel.Name = "sidebar_panel";
-            this.sidebar_panel.Size = new System.Drawing.Size(382, 1102);
+            this.sidebar_panel.Size = new System.Drawing.Size(286, 818);
             this.sidebar_panel.TabIndex = 1;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::AplikasiKasir.Properties.Resources.logoutDashboard;
-            this.pictureBox4.Location = new System.Drawing.Point(36, 907);
+            this.pictureBox4.Location = new System.Drawing.Point(27, 737);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(42, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 10;
             this.pictureBox4.TabStop = false;
@@ -133,9 +139,10 @@
             this.logout_btn.FlatAppearance.BorderSize = 0;
             this.logout_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.logout_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout_btn.Location = new System.Drawing.Point(98, 907);
+            this.logout_btn.Location = new System.Drawing.Point(74, 737);
+            this.logout_btn.Margin = new System.Windows.Forms.Padding(2);
             this.logout_btn.Name = "logout_btn";
-            this.logout_btn.Size = new System.Drawing.Size(250, 50);
+            this.logout_btn.Size = new System.Drawing.Size(188, 41);
             this.logout_btn.TabIndex = 9;
             this.logout_btn.Text = "Log Out";
             this.logout_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -145,9 +152,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::AplikasiKasir.Properties.Resources.laporanDashboard;
-            this.pictureBox3.Location = new System.Drawing.Point(36, 252);
+            this.pictureBox3.Location = new System.Drawing.Point(27, 205);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(42, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 8;
             this.pictureBox3.TabStop = false;
@@ -157,9 +165,10 @@
             this.laporan_btn.FlatAppearance.BorderSize = 0;
             this.laporan_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.laporan_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.laporan_btn.Location = new System.Drawing.Point(98, 252);
+            this.laporan_btn.Location = new System.Drawing.Point(74, 205);
+            this.laporan_btn.Margin = new System.Windows.Forms.Padding(2);
             this.laporan_btn.Name = "laporan_btn";
-            this.laporan_btn.Size = new System.Drawing.Size(250, 50);
+            this.laporan_btn.Size = new System.Drawing.Size(188, 41);
             this.laporan_btn.TabIndex = 7;
             this.laporan_btn.Text = "Laporan";
             this.laporan_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -169,9 +178,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::AplikasiKasir.Properties.Resources.barangDashboard;
-            this.pictureBox2.Location = new System.Drawing.Point(36, 177);
+            this.pictureBox2.Location = new System.Drawing.Point(27, 144);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(42, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 6;
             this.pictureBox2.TabStop = false;
@@ -181,9 +191,10 @@
             this.barang_btn.FlatAppearance.BorderSize = 0;
             this.barang_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.barang_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barang_btn.Location = new System.Drawing.Point(98, 177);
+            this.barang_btn.Location = new System.Drawing.Point(74, 144);
+            this.barang_btn.Margin = new System.Windows.Forms.Padding(2);
             this.barang_btn.Name = "barang_btn";
-            this.barang_btn.Size = new System.Drawing.Size(250, 50);
+            this.barang_btn.Size = new System.Drawing.Size(188, 41);
             this.barang_btn.TabIndex = 5;
             this.barang_btn.Text = "Barang";
             this.barang_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -193,9 +204,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::AplikasiKasir.Properties.Resources.userDashboard;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 102);
+            this.pictureBox1.Location = new System.Drawing.Point(27, 83);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(56, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(42, 41);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -205,9 +217,10 @@
             this.users_btn.FlatAppearance.BorderSize = 0;
             this.users_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.users_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.users_btn.Location = new System.Drawing.Point(98, 102);
+            this.users_btn.Location = new System.Drawing.Point(74, 83);
+            this.users_btn.Margin = new System.Windows.Forms.Padding(2);
             this.users_btn.Name = "users_btn";
-            this.users_btn.Size = new System.Drawing.Size(250, 50);
+            this.users_btn.Size = new System.Drawing.Size(188, 41);
             this.users_btn.TabIndex = 3;
             this.users_btn.Text = "Users";
             this.users_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -219,9 +232,10 @@
             this.transaksi_btn.FlatAppearance.BorderSize = 0;
             this.transaksi_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transaksi_btn.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transaksi_btn.Location = new System.Drawing.Point(98, 28);
+            this.transaksi_btn.Location = new System.Drawing.Point(74, 23);
+            this.transaksi_btn.Margin = new System.Windows.Forms.Padding(2);
             this.transaksi_btn.Name = "transaksi_btn";
-            this.transaksi_btn.Size = new System.Drawing.Size(250, 50);
+            this.transaksi_btn.Size = new System.Drawing.Size(188, 41);
             this.transaksi_btn.TabIndex = 1;
             this.transaksi_btn.Text = "Transaksi";
             this.transaksi_btn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,9 +245,10 @@
             // home_pb
             // 
             this.home_pb.Image = global::AplikasiKasir.Properties.Resources.cashierIcon;
-            this.home_pb.Location = new System.Drawing.Point(36, 28);
+            this.home_pb.Location = new System.Drawing.Point(27, 23);
+            this.home_pb.Margin = new System.Windows.Forms.Padding(2);
             this.home_pb.Name = "home_pb";
-            this.home_pb.Size = new System.Drawing.Size(56, 50);
+            this.home_pb.Size = new System.Drawing.Size(42, 41);
             this.home_pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.home_pb.TabIndex = 0;
             this.home_pb.TabStop = false;
@@ -242,21 +257,23 @@
             // 
             this.IsiPanel.BackColor = System.Drawing.SystemColors.Control;
             this.IsiPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.IsiPanel.Location = new System.Drawing.Point(382, 81);
+            this.IsiPanel.Location = new System.Drawing.Point(286, 66);
+            this.IsiPanel.Margin = new System.Windows.Forms.Padding(2);
             this.IsiPanel.Name = "IsiPanel";
-            this.IsiPanel.Size = new System.Drawing.Size(2150, 1378);
+            this.IsiPanel.Size = new System.Drawing.Size(1270, 818);
             this.IsiPanel.TabIndex = 2;
             // 
             // DashboardForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.ClientSize = new System.Drawing.Size(2102, 1183);
+            this.ClientSize = new System.Drawing.Size(1556, 884);
             this.Controls.Add(this.IsiPanel);
             this.Controls.Add(this.sidebar_panel);
             this.Controls.Add(this.navbar_pnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DashboardForm";
             this.Text = "DashboardForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

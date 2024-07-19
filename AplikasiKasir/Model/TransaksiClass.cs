@@ -449,14 +449,14 @@ namespace AplikasiKasir.Model
         // MENAMPILKAN SEMUA DATA YANG ADA PADA TABEL TRANSAKSI 
         public DataTable DataLaporan()
         {
-            string Query = "SELECT id_transaksi, kode_transaksi, tanggal_transaksi, nama_kasir, total_belanja*1000 AS total_harga FROM transaksi";
+            string Query = "SELECT id_transaksi, kode_transaksi, tanggal_transaksi, nama_kasir, total_belanja AS total_harga FROM transaksi";
             return koneksi.eksekusiQuery(Query);
         }
 
         // CARI KODE TRANSAKSI
         public DataTable CariLaporan(string cari)
         {
-            string query = "SELECT id_transaksi, kode_transaksi, tanggal_transaksi, nama_kasir, total_belanja*1000 AS total_harga FROM transaksi WHERE " +
+            string query = "SELECT id_transaksi, kode_transaksi, tanggal_transaksi, nama_kasir, total_belanja AS total_harga FROM transaksi WHERE " +
                            "kode_transaksi LIKE '%" + cari + "%' OR " +
                            "nama_kasir LIKE '%" + cari + "%' OR " +
                            "id_transaksi LIKE '%" + cari + "%' OR " +
@@ -469,7 +469,7 @@ namespace AplikasiKasir.Model
         // TOTAL PENDAPATAN 
         public double Pendapatan()
         {
-            string query = "SELECT SUM(total_belanja) * 1000 AS pendapatan FROM transaksi";
+            string query = "SELECT SUM(total_belanja) AS pendapatan FROM transaksi";
             DataTable dt = koneksi.eksekusiQuery(query);
 
             if (dt.Rows.Count > 0 && dt.Rows[0]["pendapatan"] != DBNull.Value)

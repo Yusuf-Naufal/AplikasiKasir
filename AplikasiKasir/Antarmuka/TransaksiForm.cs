@@ -319,12 +319,11 @@ namespace AplikasiKasir.Antarmuka
             }
 
             // MEMPERINGATI BATASAN STOK BARANG
-            double batas_minimal = 2; // STOK MINIMAL BARANG
+            double batas_minimal = 5; // STOK MINIMAL BARANG
             if (stok_barang - jumlah_barang < batas_minimal)
             {
                 MessageBox.Show("Stok barang akan menipis, segera tambah stok!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-
         }
 
         private void bersih_btn_Click(object sender, EventArgs e)
